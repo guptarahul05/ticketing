@@ -1,9 +1,9 @@
 import { Message } from 'node-nats-streaming';
 import mongoose from 'mongoose';
-import { OrderCreatedEvent, OrderStatus } from '@sgtickets/common';
+import { OrderCreatedEvent, OrderStatus } from '@rgtickets/common';
 import { OrderCreatedListener } from '../order-created-listener';
 import { natsWrapper } from '../../../nats-wrapper';
-import { Ticket } from '../../../models/ticket';
+import { Ticket } from '../../../models/tickets';
 
 const setup = async () => {
   // Create an instance of the listener
