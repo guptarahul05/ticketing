@@ -7,7 +7,7 @@ import { ExpirationCompleteListener } from './events/listeners/expiration-comple
 import { PaymentCreatedListener } from './events/listeners/payment-created-listener';
 
 const start = async () => {
-  console.log(('Starting....'));
+  console.log('Starting Orders...');
   
   if (!process.env.JWT_KEY) throw new Error('Jwt key not defined');
   if (!process.env.MONGO_URI) throw new Error('MONGO_URI not defined');
