@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import { app } from './app';
 
 const start = async () => {
-  console.log('Starting up 123...');
+  console.log('Starting up 123...123');
 
   if (!process.env.JWT_KEY) throw new Error('Jwt key not defined');
   if (!process.env.MONGO_URI) throw new Error('MONGO_URI not defined');
